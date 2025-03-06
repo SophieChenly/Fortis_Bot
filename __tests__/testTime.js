@@ -1,4 +1,4 @@
-const getTimeString = require('../getTimeString');
+const getTimeString = require('../functions/getTimeString');
 
 test('Prints correct', () => {
     expect(getTimeString("12 AM")).toBe('🌌 12AM');

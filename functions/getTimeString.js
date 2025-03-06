@@ -6,10 +6,6 @@ function getTimeString(currTime) {
     const time = parseInt(split[0]);
     const a = split[1];
 
-    console.log("split: " + split);
-    console.log("time: " + time);
-    console.log("a: " + a);
-    
     // sunrise + sunset 🌄 (6am/pm)
     // day 🏞 (7am-5pm) -> 7-11am + 12-5pm
     // night 🌌 (7pm-5am) -> 7-11pm + 12-5am
