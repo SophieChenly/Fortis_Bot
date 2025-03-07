@@ -31,7 +31,7 @@ const generateWeatherReportMessage = async (client, sharedState, currentDayIndex
         // Format the weather report message
         const message = `
 # **🎶G-G-GOOD MORNING, CITIZENS O-O-OF FORTIS CASTELLUM!🎶**
-***Toda-a-ay is ${currentDayAndDate}, and he-ere is your DAILY fore-fore-forecast!***
+***Toda-a-ay is ${currentDayAndDate}, and he-ere is your DAILY re-re-report!***
 **${paGrammoAnnouncement}**
 *Weather: ${weatherName}*
 *Effects: ${weatherEffects || 'None'}*

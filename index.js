@@ -20,16 +20,41 @@ const client = new Client({
     intents: [GatewayIntentBits.Guilds, GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent]
 });
 
-const scheduleWeeklyAndDailyFunctions = (client, sharedState) => {
+// Function to calculate the time until the next midnight
+const getTimeUntilMidnight = () => {
     const now = new Date();
     const midnight = new Date(now);
     midnight.setHours(24, 0, 0, 0); // Set to next midnight
+    return midnight - now;
+};
 
-    const timeUntilMidnight = midnight - now;
+// Schedule daily and weekly functions to run at midnight
+const scheduleDailyAndWeeklyFunctions = (client, sharedState) => {
+    const timeUntilMidnight = getTimeUntilMidnight();
 
     setTimeout(() => {
-        setInterval(() => dailyFunctions(client, sharedState), DAILY_INTERVAL);
-        setInterval(() => weeklyFunctions(client, sharedState), WEEKLY_INTERVAL);
+        console.log("Midnight. Running daily and weekly functions.");
+        // Set up with initial functions
+        dailyFunctions(client, sharedState);
+        // Run the weekly function if today is the start of the week (Sunday)
+        const today = new Date().getDay();
+        if (today === 0) {
+            weeklyFunctions(client, sharedState);
+        }
+
+        // Schedule the next run at the next midnight
+        setInterval(() => {
+            console.log("Midnight. Running daily and weekly functions.");
+
+            // Run the daily function
+            dailyFunctions(client, sharedState);
+
+            // Run the weekly function if today is the start of the week (Sunday)
+            const today = new Date().getDay();
+            if (today === 0) { // 0 = Sunday
+                weeklyFunctions(client, sharedState);
+            }
+        }, DAILY_INTERVAL);
     }, timeUntilMidnight);
 };
 
@@ -40,12 +65,15 @@ client.once('ready', async () => {
         const { weatherData } = await setup(client);
         sharedState.weatherData = weatherData;
 
-        // initial setup
+        // Initial setup
         weeklyFunctions(client, sharedState);
         dailyFunctions(client, sharedState);
 
+        // Start frequent functions
         setInterval(() => frequentFunctions(client), FREQUENT_INTERVAL);
-        scheduleWeeklyAndDailyFunctions(client, sharedState);
+
+        // Schedule daily and weekly functions to run at midnight
+        scheduleDailyAndWeeklyFunctions(client, sharedState);
     } catch (error) {
         console.error('Failed to complete setup:', error);
         process.exit(1);
@@ -54,7 +82,7 @@ client.once('ready', async () => {
 
 client.on('messageCreate', (message) => {
     messageRead(message, client, sharedState);
-})
+});
 
 process.on('SIGINT', () => {
     console.log('Shutting down gracefully...');
