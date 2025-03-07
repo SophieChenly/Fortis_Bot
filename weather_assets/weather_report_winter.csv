@@ -1,0 +1,20 @@
+Weather Name,Weather Effects (if any),Weather Rarity,Temp Range (Celsius),PA Grammo Announcement
+Sunny Skies,None,Very Common,15 to 25,BE-e-eaUTIFUL SUNNY ski-i-ies today! Ha-a-ave some F-F-FUN IN the SU-u-UN!
+Lingering Chills,None,Very Common,0 to 10,CHI-I-ILLY toda-ay! Buuu-u-undle up a-as temp-e-e-eratures d-drrrop!
+Fog,None,Common,0 to 10,To-o-oday's gonna be a FO-O-OGGY da-a-ay! Ca-areful! Don-n-n't bu-ump into anyone!
+Chilly Drizzling,None,Very Common,0 to 10,"Chills and DRI-I-IZZLES, oh MY! Wha-a-at a lovely day to co-o-ome to the Archives for s-s-some COZY READING! The-e-ere WILL be tre-e-eacle pie!"
+Cloudy Skies,None,Very Common,10 to 25,"O-O-Overcast skies toda-a-ay! O-oh SUN, whe-e-ere art thou!"
+Heavy Rains,None,Common,10 to 25,H-Heavy ra-a-ains WILL be ABSOLUTELY p-p-pelting one and a-a-all citizens of FORTIS Caste-e-ellum today! I'd peeersona-a-ally recommend the TABAX-I-I-Is to stay indoors!
+Thunderstorm,None,Uncommon,10 to 25,"Oh me-e-e oh MY-y-y, e-everyone stay i-i-indoors today as we have a THUNDERSTO-O-ORM rrrrampaging the be-e-eautiful decrepit stree-ee-eets of Fortis Castellum today! Although this also ma-a-akes for PERRRFECT re-eading weather. JA-A-AZZ NIGHT i-i-in the A-A-Archives to-onight!"
+Blistering Winds,"Roll a DC 8 strength saving throw every time you step outside. On failure, you are knocked prone.",Uncommon,10 to 25,placeholder
+Spring Rains,None,Very Common,10 to 25,placeholder
+Pollen Barrage,"Roll a DC 10 constitution saving throw every time you step outside. On failure, you are overtaken by an urge to sneeze uncontrollably!",Uncommon,10 to 25,placeholder
+Warm Winds,None,Common,10 to 25,placeholder
+Frosty,None,Common,-5 to 5,placeholder
+Typhoon,"Roll a DC 15 strength saving throw. On failure, you are knocked prone as you're battered by wind and rain!",Rare,10 to 25,placeholder
+Arcane Overflow,"Roll a DC 14 intelligence saving throw every time you step outside. On failure, you are overwhelmed by the overwhelming surge of arcane energy. Every time you cast a spell, roll on the Wild Magic Surge table.",Very Rare,10 to 25,AA-A-A-A-A-AAAAAA!!! *Static*
+Draconic Clouds,"Roll a DC 15 dexterity saving throw every time you step outside. On failure, you find yourself in the crossfire of battling dragon clouds- and are hit for 2d6 lighting damage!",Very Rare,10 to 25,W-W-WHAT a r-r-rare sight! Draculon-i-i-mbus clouds! Wa-a-atch out for stra-a-ay blasts of dragon bre-e-eath!
+Necromantic Surge,"While out in the streets, there will be a chance for undead encounters!",Very Rare,-5 to 5,Loo-o-o-oks like today's the DA-A-AY of the DEAD! Kee-eep a lookout for all ma-a-anner of spectres and spi-i-irits roaming the streets!
+Hail,Take 1d4 bludgeoning damage every time you step outside.,Rare,-5 to 5,placeholder
+Dust Storm,None,Rare,10 to 25,placeholder
+Windy,None,Very Common,10 to 25,placeholder

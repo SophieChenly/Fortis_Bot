@@ -16,9 +16,6 @@ const processMessage =  (message) => {
 const messageRead = (message) => {
     const { command, args } = processMessage(message) || {};
 
-    console.log("Command = ", command);
-    console.log("Args = ", args);
-
     if (!command) return; 
 
     if (command === "pa") {
@@ -28,8 +25,10 @@ const messageRead = (message) => {
 
         switch (args[0]) {
             case "dice":
-                console.log("Rolling dice");
                 rollDice(message, args);
+                break;
+            case "encounter":
+                message.channel.send("SUMMONING MO-O-ONSTERS!");
                 break;
             default:
                 break;
