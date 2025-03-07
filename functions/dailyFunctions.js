@@ -1,9 +1,8 @@
-const { generateWeatherReportMessage } = require("./generateWeatherReportMessage");
+const { generateDailyWeatherReport } = require("./generateDailyWeatherReport");
 
 const dailyFunctions = (client, sharedState) => {
-    // stub
     console.log("Running daily functions!");
-    generateWeatherReportMessage(client, sharedState);
+    generateDailyWeatherReport(client, sharedState);
     return;
 }
 

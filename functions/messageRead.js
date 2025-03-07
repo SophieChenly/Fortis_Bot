@@ -1,4 +1,5 @@
 const { rollDice } = require("./rollDice");
+const { weatherCommands } = require("./weatherCommands");
 
 const prefix = '!';
 
@@ -13,7 +14,7 @@ const processMessage =  (message) => {
     return { command, args };
 }
 
-const messageRead = (message) => {
+const messageRead = (message, client, sharedState) => {
     const { command, args } = processMessage(message) || {};
 
     if (!command) return; 
@@ -30,6 +31,8 @@ const messageRead = (message) => {
             case "encounter":
                 message.channel.send("SUMMONING MO-O-ONSTERS!");
                 break;
+            case "weather":
+                weatherCommands(message, args, client, sharedState);
             default:
                 break;
         }

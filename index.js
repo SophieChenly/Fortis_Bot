@@ -40,8 +40,8 @@ client.once('ready', async () => {
         const { weatherData } = await setup(client);
         sharedState.weatherData = weatherData;
 
+        // initial setup
         weeklyFunctions(client, sharedState);
-        console.log("Shared state: ", sharedState);
         dailyFunctions(client, sharedState);
 
         setInterval(() => frequentFunctions(client), FREQUENT_INTERVAL);
@@ -53,7 +53,7 @@ client.once('ready', async () => {
 });
 
 client.on('messageCreate', (message) => {
-    messageRead(message);
+    messageRead(message, client, sharedState);
 })
 
 process.on('SIGINT', () => {
