@@ -30,7 +30,7 @@ const getTimeUntilMidnight = () => {
 
 // Schedule daily and weekly functions to run at midnight
 const scheduleDailyAndWeeklyFunctions = (client, sharedState) => {
-    const timeUntilMidnight = getTimeUntilMidnight();
+    const timeUntilMidnight = getTimeUntilMidnight() + 5;
 
     setTimeout(() => {
         console.log("Midnight. Running daily and weekly functions.");
