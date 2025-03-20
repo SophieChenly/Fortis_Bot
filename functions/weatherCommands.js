@@ -1,14 +1,18 @@
 const { generateWeatherReportMessage } = require("./generateWeatherReportMessage");
 const { generateWeeklyWeatherReport } = require("./generateWeeklyWeatherReport");
 
+const sendWeekWeatherAsMessage = (message, sharedState) => {
+    const weeklyForecast = sharedState.weeklyWeather
+                .map((weather, index) => `**Day ${index}:** ${weather['Weather Name']} - ${weather['Weather Effects (if any)']}`)
+                .join('\n');
+            message.channel.send(`**This Week's Weather Forecast:**\n${weeklyForecast}`);
+}
+
 const weatherCommands = (message, args, client, sharedState) => {
     try {
         if (!args[1]) {
             // Display the weekly weather forecast
-            const weeklyForecast = sharedState.weeklyWeather
-                .map((weather, index) => `**Day ${index}:** ${weather['Weather Name']} - ${weather['PA Grammo Announcement']}`)
-                .join('\n');
-            message.channel.send(`**This Week's Weather Forecast:**\n${weeklyForecast}`);
+            sendWeekWeatherAsMessage(message, sharedState);
             return;
         }
 
@@ -69,14 +73,11 @@ const weatherCommands = (message, args, client, sharedState) => {
 
             message.reply("Resending weather report...");
             generateWeatherReportMessage(client, sharedState, currentDayIndex);
+
         } else if (args[1] === "reroll") {
             message.channel.send("**Rerolling this week's weather:**");
             sharedState.weeklyWeather = generateWeeklyWeatherReport(client, sharedState);
-
-            const weeklyForecast = sharedState.weeklyWeather
-                .map((weather, index) => `**Day ${index}:** ${weather['Weather Name']} - ${weather['Weather Effects (if any)']}`)
-                .join('\n');
-            message.channel.send(`**This Week's Updated Weather Forecast:**\n${weeklyForecast}`);
+            sendWeekWeatherAsMessage(message, sharedState);
         } else {
             message.reply("Invalid command. Use `!pa weather` to view the forecast, `!pa weather reroll` to reroll the week's weather, or `!pa weather edit` to modify it.");
         }
