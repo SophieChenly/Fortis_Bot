@@ -1,20 +1,36 @@
 Weather Name,Weather Effects (if any),Weather Rarity,Temp Range (Celsius),PA Grammo Announcement
 Sunny Skies,None,Very Common,15 to 25,BE-e-eaUTIFUL SUNNY ski-i-ies today! Ha-a-ave some F-F-FUN IN the SU-u-UN!
+Chilly Drizzles,None,Very Common,0 to 10,"Chills and DRI-I-IZZLES, oh MY! Wha-a-at a lovely day to co-o-ome to the Archives for s-s-some COZY READING! The-e-ere WILL be tre-e-eacle pie!"
 Lingering Chills,None,Very Common,0 to 10,CHI-I-ILLY toda-ay! Buuu-u-undle up a-as temp-e-e-eratures d-drrrop!
-Fog,None,Common,0 to 10,To-o-oday's gonna be a FO-O-OGGY da-a-ay! Ca-areful! Don-n-n't bu-ump into anyone!
-Chilly Drizzling,None,Very Common,0 to 10,"Chills and DRI-I-IZZLES, oh MY! Wha-a-at a lovely day to co-o-ome to the Archives for s-s-some COZY READING! The-e-ere WILL be tre-e-eacle pie!"
 Cloudy Skies,None,Very Common,10 to 25,"O-O-Overcast skies toda-a-ay! O-oh SUN, whe-e-ere art thou!"
+Windy,None,Very Common,10 to 25,WHE-E-EE! The wi-i-ind's got quite the SPR-R-RING in its step toda-a-ay! Hold onto your ha-a-ats and scarves!
+Breezy and Sunny,None,Very Common,10 to 25,LO-O-OVELY day for a pi-i-icnic! I'd LOVE to join if I weren't ma-a-agically bound to the ARCHIVES fo-o-or my foreseeable li-i-ifespan!
+Balmy,None,Very Common,15 to 25,Waaaa-a-arm! And lo-o-ovely! WHAT mo-o-ore could you ask for??
+Humid,None,Very Common,10 to 25,"W-w-w-w-wet, wet, wet! Floors are sli-i-ippery, air is STICKY! CIRCUITS TRI-I-IPPY!"
+Warm Drizzles,None,Very Common,10 to 25,"Rai-ai-ain, rain GO a-a-away! BUT! Could be worse! It could be raining acid! The-e-e ground co-ou-ou-ould unleash A-A-A swarm of deadly BEASTS! I LO-O-Ove being positive!"
+Spring Rains,None,Very Common,10 to 25,LO-O-OVELY wa-a-arm spring rai-ains are here to li-ightly moisten your person to-o-oday! *Off mic:* whaddya mean tha-a-at's a weird thing to say?
+Fog,None,Common,0 to 10,To-o-oday's gonna be a FO-O-OGGY da-a-ay! Ca-areful! Don-n-n't bu-ump into anyone!
 Heavy Rains,None,Common,10 to 25,H-Heavy ra-a-ains WILL be ABSOLUTELY p-p-pelting one and a-a-all citizens of FORTIS Caste-e-ellum today! I'd peeersona-a-ally recommend the TABAX-I-I-Is to stay indoors!
+Warm Winds,None,Common,10 to 25,"Ge-e-entle, WA-A-ARM breezes toda-a-ay! Perfect for a stro-o-oll through the ci-i-ity!"
+Chilly Winds,None,Common,0 to 10,A sli-i-ight chill in the bree-ee-eeze today!
+Sparse Snowfall,None,Common,0 to 10,"Snow, snow, snow! But not e-e-enough for a SNOWMAN, sno-o-owANGEL or even a snowMOUSE! Bummer..."
+Dark Clouds,None,Common,10 to 25,The sk-sk-sky looks MOODY to-to-today...
+Frosty,None,Common,-5 to 5,"BRR-RRRRR! FRIG-G-GID to-o-oday! Bundle-undle-undle up, everyone!"
 Thunderstorm,None,Uncommon,10 to 25,"Oh me-e-e oh MY-y-y, e-everyone stay i-i-indoors today as we have a THUNDERSTO-O-ORM rrrrampaging the be-e-eautiful decrepit stree-ee-eets of Fortis Castellum today! Although this also ma-a-akes for PERRRFECT re-eading weather. JA-A-AZZ NIGHT i-i-in the A-A-Archives to-onight!"
 Blistering Winds,"Roll a DC 8 strength saving throw every time you step outside. On failure, you are knocked prone.",Uncommon,10 to 25,"H-H-HOLD O-O-on to your s-s-socks, shields and swo-o-ords!I-i-it's like a PA-A-ARTY out he-e-ere! If a pa-a-arty was just a who-o-ole lotta WIND!"
-Spring Rains,None,Very Common,10 to 25,LO-O-OVELY wa-a-arm spring rai-ains are here to li-ightly moisten your person to-o-oday! *Off mic:* whaddya mean tha-a-at's a weird thing to say?
 Pollen Barrage,"Roll a DC 10 constitution saving throw every time you step outside. On failure, you are overtaken by an urge to sneeze uncontrollably!",Uncommon,10 to 25,"BEE-ware, tho-o-ose with pollen allergi-i-ies! There's POlle-llen here, POLLEN th-th-there! POLLEN in my DISC DRIVE! Please se-e-end help!"
-Warm Winds,None,Common,10 to 25,"Ge-e-entle, WA-A-ARM breezes toda-a-ay! Perfect for a stro-o-oll through the ci-i-ity!"
-Frosty,None,Common,-5 to 5,"BRR-RRRRR! FRIG-G-GID to-o-oday! Bundle-undle-undle up, everyone!"
-Typhoon,"Roll a DC 15 strength saving throw. On failure, you are knocked prone as you're battered by wind and rain!",Rare,10 to 25,"N-N-Nasty loo-oo-ooking typHOON t-t-today-ay! Wa-a-a-tch out for BLISTERING wi-i-inds!"
-Arcane Overflow,"Roll a DC 14 intelligence saving throw every time you step outside. On failure, you are overwhelmed by the overwhelming surge of arcane energy. Every time you cast a spell, roll on the Wild Magic Surge table.",Very Rare,10 to 25,AA-A-A-A-A-AAAAAA!!! *Static*
+Mild Tremors,None,Uncommon,10 to 25,Sli-i-ight vibrations in the earth today! I ho-o-ope it doesn't disturb any catnaps!
+Flowerfall,"Every time you step outside, you experience one of the effects of Druidcraft!",Uncommon,10 to 25,"L-L-LOOKS like the fe-e-ey are at it again! Seems li-i-ike they're in GOOD spi-i-irits! Oh, the swee-eet smell of flowers! If only I-I-I could smell!"
+Typhoon,"Roll a DC 15 strength saving throw. On failure, you are knocked prone as you're battered by wind and rain!",Rare,10 to 25,N-N-Nasty loo-oo-ooking typHOON t-t-today-ay! Wa-a-a-tch out for BLISTERING wi-i-inds!
+Hail,Take 1d4 bludgeoning damage every time you step outside.,Rare,-5 to 5,WA-A-ARNING! It's RAI-I-INING ICE today! Keep those he-e-eads covered or you'll get quite the BU-U-UMP on the noggin!
+Choppy Seas,"Roll a 1d8 every time you step outside. (5-8) Nothing happens! (2-4) Your feet are soaked as ocean waves flood the streets! (1) Roll a DC 15 strength saving throw. On failure, you are swept up by a strong current in the flood!",Rare,10 to 25,"CARE-CAREFUL around the docks and the streets of OUR u-u-usually quaint c-c-coastal town! The-e-e SEA is rushing up to meet, no-o-ot the shores, but YOU!"
+Null Arcane Depression,All spells are cast at 50% effectiveness!,Rare,10 to 25,*Quietly* e-er... some-ome-omething is off. maybe i-i-i've come down with something...
+Phantom Whispers,"Roll a DC 12 intelligence saving throw every time you step outside. On failure, you are overwhelmed by whispers of ghosts from the past.",Rare,10 to 25,U-U-URGENT ANNOUNCEMENT: We ARE experiencing a-a-another haunt fro-o-om GHOSTs o-o-of the past! Try-y-y to keep YOUR heads!
+Dust Storm,None,Rare,10 to 25,DUST-UST-UST HERE! D-d-dust THERE! DUST EVERYWHE-E-ERE! *static*
+Meteor Shower,None,Rare,10 to 25,"A-a-ah, a rare sight! Showers from the HEAVENS! Ma-a-ake a wish, everyone! As for me, I wi-i-ish for....."
+Arcane Overflow,"Roll a DC 14 intelligence saving throw every time you step outside. On failure, you are overwhelmed by the overwhelming surge of arcane energy. For the next 24 hours, every time you cast a spell, roll on the Wild Magic Surge table.",Very Rare,10 to 25,AA-A-A-A-A-AAAAAA!!! *Static*
 Draconic Clouds,"Roll a DC 15 dexterity saving throw every time you step outside. On failure, you find yourself in the crossfire of battling dragon clouds- and are hit for 2d6 lighting damage!",Very Rare,10 to 25,W-W-WHAT a r-r-rare sight! Draculon-i-i-mbus clouds! Wa-a-atch out for stra-a-ay blasts of dragon bre-e-eath!
 Necromantic Surge,"While out in the streets, there will be a chance for undead encounters!",Very Rare,-5 to 5,Loo-o-o-oks like today's the DA-A-AY of the DEAD! Kee-eep a lookout for all ma-a-anner of spectres and spi-i-irits roaming the streets!
-Hail,Take 1d4 bludgeoning damage every time you step outside.,Rare,-5 to 5,WA-A-ARNING! It's RAI-I-INING ICE today! Keep those he-e-eads covered or you'll get quite the BU-U-UMP on the noggin!
-Dust Storm,None,Rare,10 to 25,DUST-UST-UST HERE! D-d-dust THERE! DUST EVERYWHE-E-ERE! *static*
-Windy,None,Very Common,10 to 25,WHE-E-EE! The wi-i-ind's got quite the SPR-R-RING in its step toda-a-ay! Hold onto your ha-a-ats and scarves!
+Earthquake,"Roll a DC 15 dexterity saving throw every time you step outside. On failure, you are knocked prone from the rumbling ground and take 1d6 bludgeoning damage!",Very Rare,10 to 25,The-e-e-e ground's-a-RUM-RUM-RUMBLING! EEK! Hi-i-ide under your nearest t-t-table or FRONTLINE!
+Fae Frenzy,"Little, giggling pixies flit about the town! Roll a DC 15 charisma saving throw every time you step outside. On failure, you experience the effects of a Polymorph spell for one hour!",Very Rare,10 to 25,"AHHH! THE-E-E'VE *static* Hehe, is this thing on? HAAALLOOOO FRIENDS! We're just passing by to celebrate our cultural holiday, Fae Friday! Is it Friday? It's Friday somewhere... ehe~ "
+Phantom Fire,"Roll a DC 14 intelligence saving throw every time you step outside. On failure, you suffer the effects of the Phantasmal Force spell, fully seeing and believing that you and the rest of the town are burning alive for one minute, and take 1d6 psychic damage per 6 seconds as long as the illusionary fire isn't put out.",Very Rare,10 to 25,U-U-URGENT ANNOUNCEMENT: We ARE experiencing a-a-another haunt fro-o-om GHOSTs o-o-of the past! Try-y-y to keep YOUR heads!
