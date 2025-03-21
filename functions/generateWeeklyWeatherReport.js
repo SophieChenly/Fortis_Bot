@@ -18,9 +18,10 @@ const generateWeeklyWeatherReport = (client, sharedState) => {
     if (hasRare == 0) {
         console.log("No rare weather effects. Adding one at random: ");
         const roll = Math.floor(Math.random() * 6);
-        const flip = Math.floor(Math.random() * 1);
+        const flip = Math.floor(Math.random() * 5);
 
-        if (flip == 1) {
+        // Tweaked veryRare weather chance to 1 in 5
+        if (flip != 1) {
             weeklyWeather[roll] = selectDailyWeather('rare', weatherSelection);
         } else {
             weeklyWeather[roll] = selectDailyWeather('veryRare', weatherSelection);
